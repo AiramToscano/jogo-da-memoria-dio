@@ -5,9 +5,17 @@
 }
 
 body {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 68px;
+    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+    width: 100vw;
     height: 100vh;
-    display: flex;
-    background-color: rgb(188, 248, 228);
+    text-shadow: 8px 8px 10px #0000008c;
+    background-color: #343a40;
 }
 
 .memory-game {
