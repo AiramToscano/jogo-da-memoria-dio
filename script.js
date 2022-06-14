@@ -2,6 +2,10 @@ const cards = document.querySelectorAll('.card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+let cont = 0;
+const contagem = document.getElementById('contagem');
+const placar = document.getElementById('contagem1');
+const buttom = document.getElementById('button');
 
 //função para virar carta
 function flipCard() {
@@ -23,6 +27,14 @@ function flipCard() {
 //função que checa se as cartas são iguais
 function checkForMatch() {
     if(firstCard.dataset.card === secondCard.dataset.card) {
+        cont = cont + 1;
+        contagem.innerHTML = cont;
+        if(cont === 6) {
+            contagem.innerHTML = 'Parabens, Você Ganhou!!'
+            placar.style.display = 'none';
+            buttom.style.display = 'block';
+            return;
+        }
         disableCards();
         return;
     }
@@ -47,7 +59,7 @@ function unflipCards() {
         secondCard.classList.remove('flip');
 
         resetBoard();
-    }, 1500);
+    }, 1000);
 }
 
 //função que reseta o tabuleiro
@@ -63,8 +75,11 @@ function resetBoard() {
         card.style.order = ramdomPosition;
     })
 })();
-
 //adiciona evento de clique na carta
 cards.forEach((card) => {
     card.addEventListener('click', flipCard)
+});
+
+buttom.addEventListener('click', () => {
+    document.location.reload(true);
 });
