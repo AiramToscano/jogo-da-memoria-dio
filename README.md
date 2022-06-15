@@ -1,6 +1,5 @@
-# Oi, tudo bem? Chegou aqui através do curso, certo? 🙃
+# Projeto realizado atravéns do bootcamp TQI Full Stack feito pela [DIO](https://web.dio.me/home)
 
-Esse é o repositório da nossa aula de Javascript, na qual vamos fazer um jogo da memória com a temática de Super Mario! 
 
 ### Os requisitos são:
 
@@ -11,3 +10,5 @@ Esse é o repositório da nossa aula de Javascript, na qual vamos fazer um jogo 
 
 
 ## 🚀 Let's code! 🚀
+
+# Foi feito um deploy do projeto [Aqui](https://jogodavelhaairam.netlify.app/)
