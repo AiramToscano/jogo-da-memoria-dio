@@ -1,4 +1,4 @@
-# Projeto realizado atravéns do bootcamp TQI Full Stack feito pela [DIO](https://web.dio.me/home)
+# Projeto realizado através do bootcamp TQI Full Stack feito pela [DIO](https://web.dio.me/home)
 
 
 ### Os requisitos são:
